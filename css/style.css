@@ -1,0 +1,690 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Montserrat&display=swap');
+
+:root {
+    --primary: rgba(235, 235, 235, 0.848);
+    --secondary: #0e9ac4;
+    --text: #1d1d1d;
+    --sectionbg: #81b6c5b4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a8a8a8;
+    border-radius: 8px;
+}
+
+html {
+    font-family: Montserrat;
+    font-size: 18px;
+}
+
+body {
+    margin: 0px;
+    color: var(--text);
+}
+
+header {
+    padding: 7px 50px 5px 5px;
+    background-color: #b9b2b26c;
+    position: fixed;
+    z-index: 2;
+
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+header img {
+    height: 45px;
+    margin-left: 2%;
+}
+
+a {
+    text-decoration: none !important;
+}
+
+p {
+    line-height: 160%;
+}
+
+.nav {
+    float: right;
+    padding-top: 10px;
+}
+
+.nav a {
+    color: var(--primary);
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    margin-left: 15px;
+    font-family: Kanit;
+    transition: 0.5s;
+}
+
+.nav a:hover {
+    color: var(--secondary);
+}
+
+h1 {
+    font-family: Kanit;
+    font-size: 2rem;
+    margin-top: 5px;
+}
+
+#intro {
+     /* min-height: 86.7vh;  */
+    min-height: 100vh;
+    background: linear-gradient(#41414177, #41414181), url("../images/index.jpg");
+    background-size: cover;
+    color: var(--primary);
+    position: relative;
+}
+
+.intro-content {
+    padding-top: 22vh;
+    padding-left: 8%;
+}
+
+.intro-content h1 {
+    font-size: 3.8rem;
+    margin-top: 5px;
+    margin-bottom: -15px;
+}
+
+.logo {
+    margin-top: -35px;
+    margin-left: -25px;
+    max-height: 150px;
+}
+
+main section {
+    padding: 70px 15% 35px 15%;
+    position: relative;
+}
+
+.centered {
+    text-align: center !important;
+}
+
+.intro-btn {
+    display: inline-block;
+    background-color: #ffffff3d;
+    padding: 12px 10px;
+    margin-right: 15px;
+    border-radius: 4px;
+    border: 2px solid #ffffff86;
+
+    backdrop-filter: blur(5px);
+    color: var(--primary);
+    transition: 0.5s;
+}
+
+.intro-btn:hover {
+    filter: opacity(0.85);
+    color: var(--secondary);
+}
+
+#about-us {
+    width: 100%;
+    min-height: 55vh;
+    background: url(https://wallpaperaccess.com/full/1164874.jpg);
+    background-position: 0% 66%;
+    background-size: cover;
+}
+
+#despre {
+    min-height: 70vh;
+    background: linear-gradient( var(--primary), var(--sectionbg) );
+}
+
+.top-section {
+    color: white;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.top-title {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 85px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    line-height: 150%;
+}
+
+/* #despre-btn {
+    background-color: #5acdf067;
+} */
+
+.p-despre {
+    border: 2px solid lightgray;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #efefef;
+}
+
+.i-despre {
+    font-size: 22px !important;
+}
+
+.slideshow {
+    width: 100%;
+    height: 65vh;
+    border-radius: 5px;
+}
+
+.slide {
+    height: inherit;
+    position: relative;
+    border-radius: inherit;
+}
+
+.slide img {
+    height: inherit;
+    width: 100%;
+    object-fit: cover;
+    border-radius: inherit;
+}
+
+.slide-text {
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: inherit;
+    flex-direction: column;
+    text-align: center;
+
+    color: var(--primary);
+    background: radial-gradient(#00000098, #00000055);
+    font-weight: bold;
+
+    border-radius: inherit;
+    border: 2px solid var(--secondary);
+
+    padding: 20px 12%;
+    font-size: 1.05rem;
+    gap: 50px;
+}
+
+.slide-text i {
+    font-size: 3.5rem;
+    /* position: absolute;
+    top: 20%; */
+}
+
+#despre > i, #servicii > i, #galerie > i, #rezervare > i, #contacte > i {
+    position: absolute;
+    font-size: 2rem;
+    z-index: -2;
+}
+
+.fly1 {
+    top: 7%;
+    left: 13%;
+    animation: icon-anim1 3s 0.5s infinite;
+}
+
+.fly2 {
+    bottom: 3%;
+    left:22%;
+    animation: icon-anim2 3s 0.5s infinite;
+}
+
+.fly3 {
+    bottom: 28%;
+    left: 9%;
+    animation: icon-anim1 2s 1s infinite;
+}
+
+.fly4 {
+    bottom: 20%;
+    right: 7%;
+    animation: icon-anim2 2s 0.3s infinite;
+}
+
+.fly5{
+    top: 27%;
+    right: 10%;
+    animation: icon-anim1 3.5s 0.7s infinite;
+}
+
+.fly6{
+    top: 5%;
+    right: 16%;
+    animation: icon-anim2 2.5s 0.4s infinite;
+}
+
+.fly7 {
+    bottom: 7%;
+    left: 5%;
+    animation: icon-anim1 2.5s 0.4s infinite;
+}
+
+.fly8 {
+    top: 35%;
+    left: 8%;
+    animation: icon-anim2 2.7s 0.1s infinite;
+}
+
+.fly9 {
+    bottom: 2%;
+    right: 11%;
+    animation: icon-anim1 2.8s 0.2s infinite;
+}
+
+#services {
+    width: 100%;
+    min-height: 55vh;
+    background: url(https://cdn.pixabay.com/photo/2020/02/22/17/53/communication-4871245_960_720.jpg);
+    background-position: 0% 68%;
+    background-size: cover;
+}
+
+#servicii {
+    min-height: 70vh;
+    background: linear-gradient( var(--primary), var(--sectionbg) );
+}
+
+#gallery {
+    width: 100%;
+    min-height: 55vh;
+    background: linear-gradient(#ffffff3a, #ffffff56), url(https://wallpaperaccess.com/full/318166.jpg);
+    background-position: 0% 60%; 
+    background-size: cover;
+}
+
+#galerie {
+    min-height: 60vh;
+    background: linear-gradient( var(--primary), var(--sectionbg) );
+}
+
+.container-galerie {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.container-galerie img {
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 3px;
+}
+
+.container-galerie img:hover {
+    filter: drop-shadow(0 0 4px var(--secondary));
+}
+
+.row {
+    overflow: auto;
+}
+
+[class^="col-"] {
+    float: left;
+    padding: 0px 10px;
+}
+
+/* [class^='col-'] {
+    padding: 20px;
+    float: left;
+} */
+
+.col-10 { width: 10%; }
+.col-20 { width: 20%; }
+.col-25 { width: 25%; }
+.col-30 { width: 30%; }
+.col-33 { width: 33.3%; }
+.col-40 { width: 40%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+.col-70 { width: 70%; }
+.col-75 { width: 75%; }
+.col-80 { width: 80%; }
+.col-90 { width: 90%; }
+.col-100 { width: 100%; }
+
+.event {
+    padding: 0px 15px 15px 15px;
+    background-color: #e9e9e9;
+    border-radius: 5px;
+    border: 1px solid #ff533d;
+    height: 320px;
+    overflow: auto;
+    margin: 0px -3px 30px -3px;
+}
+
+.event p {
+    line-height: 150%;
+    border-left: 6px solid #ff533d;
+    padding-left: 12px;
+    font-size: 18px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    transition: all 0.3s;
+}
+
+#contact-us {
+    width: 100%;
+    min-height: 55vh;
+    background: linear-gradient(#ffffff3a, #ffffff56), url(https://cdn.pixabay.com/photo/2018/12/02/10/07/web-3850917_960_720.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+#contacte {
+    min-height: 60vh;
+    background: linear-gradient( var(--primary), var(--sectionbg) );
+}
+
+.contact-list {
+    line-height: 150%;
+    list-style: radial-gradient( var(--primary), var(--sectionbg) );
+    text-align: left;
+    margin-left: 50px;
+}
+
+.contact-list2 {
+    line-height: 200%;
+    list-style: radial-gradient( var(--primary), var(--sectionbg) );
+    text-align: left;
+    margin-left: 30px;
+}
+
+.lista h3 {
+    font-size: 25px;
+    margin-top: 10px;
+    color: black;
+    text-shadow: 5px 3px 20px gray;
+    font-weight: bold;
+}
+
+.harta {
+    width: 100%;
+    height: 450px;
+    border-radius: 3px;
+}
+
+.contacte-info a {
+    color: var(--text) !important;
+}
+
+.formular-container {
+    background-color: #ffffff40;
+    margin-right: 30px;
+    max-width: 500px;
+    border-radius: 10px;
+    text-align: center;
+    padding: 2px 10px 20px 10px;
+    margin-top: 15px;
+    overflow: auto;
+}
+
+.formular-container input, .formular-container textarea {
+    font-family: inherit;
+    width: 80%;
+    margin-bottom: 10px;
+    resize: none;
+    font-size: 0.85rem;
+    padding: 4px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid gray;
+    /* background-color: ; */
+}
+
+.formular-container input[type="button"] {
+    cursor: pointer;
+    width: 130px;
+    float: right;
+    margin-right: 10%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 10px 10px 10px;
+    background: var(--sectionbg);
+    color: var(--primary);
+}
+
+.text_footer {
+    font-size: 25px;
+}
+
+.texte_footer {
+    font-size: 22px;
+}
+
+.texte_footer a{
+    color: var(--primary) !important;
+}
+
+.logo_footer {
+    height: 80px;
+    margin-top: 10px;
+}
+
+.facebook {
+    height: 55px;
+}
+
+.hamburger {
+    color: var(--primary);
+    font-size: 1.7rem;
+    cursor: pointer;
+    display: none !important;
+}
+
+.container-noutati {
+    width: calc(100% - 310px);
+    float: left;
+}
+
+/* .fb-desktop {
+    float: right;
+    margin-top: 90px;
+}
+
+.fb-mobile {
+    display: none;
+} */
+
+#reservation {
+    width: 100%;
+    min-height: 55vh;
+    background: linear-gradient(#ffffff3a, #ffffff56), url(https://cdn.pixabay.com/photo/2018/12/02/10/07/web-3850917_960_720.jpg);
+    background-position: 0% 50%;
+    background-size: cover;
+}
+
+#rezervare {
+    min-height: 95vh;
+    padding-right: 8%;
+    background: linear-gradient( var(--primary), var(--sectionbg) );
+}
+
+/* #noutati {
+    overflow: auto;
+    min-height: 95vh;
+    padding-right: 8%;
+    background: linear-gradient( var(--primary), var(--sectionbg) );
+} */
+
+/* .noutate {
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    padding: 0px 15px 10px 15px;
+    overflow: auto;
+    margin-bottom: 15px;
+}
+
+.data {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 0.8rem;
+} */
+
+/* .noutate img {
+    width: 25%;
+    float: left;
+    margin-right: 12px;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.noutate p {
+    font-size: 0.9rem;
+    margin-top: -5px;
+} */
+
+.active {
+    color: #435d9a !important;
+    font-size: bold;
+    /* color: rgba(9, 22, 145, 0.692) !important; */
+}
+
+@keyframes icon-anim1 {
+    0% { transform: scale(1) rotate(0deg); }
+    40% { transform: scale(1.15) rotate(30deg); }
+    70% { transform: rotate(-30deg); }
+    100% { transform: scale(1) rotate(0deg); }
+}
+
+@keyframes icon-anim2 {
+    0% { transform: translateX(0) scale(1); }
+    50% { transform: translateX(5px) scale(1.1);  }
+    75% { transform: translateX(-5px) scale(1.2);  }
+    100% { transform: translateX(0) scale(1); }
+}
+
+@media (max-width: 1300px) {
+    main section {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    .noutate img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .noutate img {
+        float: none;
+        max-height: 240px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 16px;
+    }
+
+    main section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .intro-content h1 {
+        font-size: 2.4rem;
+    }
+
+    .slideshow {
+        height: 50vh;
+    }
+
+    .container-galerie img {
+        width: 160px;
+        height: 140px;
+    }
+
+    [class^="col-"] {
+        width: 100%;
+    }
+
+    .formular-container {
+        width: 100%;
+        margin-bottom: 15px;
+        max-width: none;
+    }
+
+    .hamburger {
+        display: inline-block !important;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+
+    .nav {
+        float: none;
+    }
+
+    .nav a {
+        display: none;
+    }
+    
+    .nav.mobile a {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    #intro {
+        background-position: 70%;
+    }
+
+    #noutati {
+        padding-right: 10px;
+    }
+
+    .fb-desktop {
+        display: none;
+    }
+
+    .fb-mobile {
+        display: block;
+        text-align: center;
+        margin-top: 30px;
+    }
+    
+    .container-noutati {
+        width: 100%;
+        float: none;
+    }
+
+}
