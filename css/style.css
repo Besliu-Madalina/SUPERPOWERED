@@ -2,9 +2,10 @@
 
 :root {
     --primary: rgba(235, 235, 235, 0.848);
-    --secondary: #0e9ac4;
+    --secondary: #549835db;
     --text: #1d1d1d;
-    --sectionbg: #81b6c5b4;
+    --sectionbg: #64a944b0;
+    --hover: #13420c;
 }
 
 * {
@@ -31,7 +32,7 @@ body {
 }
 
 header {
-    padding: 7px 50px 5px 5px;
+    padding: 5px 35px 5px 5px;
     background-color: #b9b2b26c;
     position: fixed;
     z-index: 2;
@@ -41,7 +42,7 @@ header {
 }
 
 header img {
-    height: 45px;
+    height: 40px;
     margin-left: 2%;
 }
 
@@ -60,7 +61,7 @@ p {
 
 .nav a {
     color: var(--primary);
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     text-transform: uppercase;
     margin-left: 15px;
     font-family: Kanit;
@@ -68,7 +69,7 @@ p {
 }
 
 .nav a:hover {
-    color: var(--secondary);
+    color: var(--hover);
 }
 
 h1 {
@@ -78,9 +79,9 @@ h1 {
 }
 
 #intro {
-     /* min-height: 86.7vh;  */
+    /* min-height: 86.7vh;  */
     min-height: 100vh;
-    background: linear-gradient(#41414177, #41414181), url("../images/index.jpg");
+    background: linear-gradient(#41414191, #41414191), url("../images/index4.jpg");
     background-size: cover;
     color: var(--primary);
     position: relative;
@@ -92,15 +93,15 @@ h1 {
 }
 
 .intro-content h1 {
-    font-size: 3.8rem;
+    font-size: 3.6rem;
     margin-top: 5px;
     margin-bottom: -15px;
 }
 
 .logo {
-    margin-top: -35px;
+    margin-top: -30px;
     margin-left: -25px;
-    max-height: 150px;
+    max-height: 130px;
 }
 
 main section {
@@ -127,14 +128,14 @@ main section {
 
 .intro-btn:hover {
     filter: opacity(0.85);
-    color: var(--secondary);
+    color: var(--hover);
 }
 
 #about-us {
     width: 100%;
     min-height: 55vh;
-    background: url(https://wallpaperaccess.com/full/1164874.jpg);
-    background-position: 0% 66%;
+    background: url("../images/teamwork-3213924_1920.jpg");
+    background-position: 0% 55%;
     background-size: cover;
 }
 
@@ -161,15 +162,22 @@ main section {
     line-height: 150%;
 }
 
-/* #despre-btn {
-    background-color: #5acdf067;
-} */
-
 .p-despre {
-    border: 2px solid lightgray;
-    padding: 12px;
+    border: 2px solid var(--secondary);
+    padding: 10px;
     border-radius: 5px;
-    background-color: #efefef;
+    background: linear-gradient(var(--primary), #64a94460);
+}
+
+.p-despre p {
+    text-indent: 20px;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+}
+
+.video {
+    width: 95%;
+    margin: 5px 2.5%;
 }
 
 .i-despre {
@@ -284,29 +292,42 @@ main section {
     animation: icon-anim1 2.8s 0.2s infinite;
 }
 
-#services {
+#energy {
     width: 100%;
     min-height: 55vh;
-    background: url(https://cdn.pixabay.com/photo/2020/02/22/17/53/communication-4871245_960_720.jpg);
-    background-position: 0% 68%;
+    background: linear-gradient(#00000053, #00000056), url("../images/EnergieVerde.jpg");
+    background-position: 0% 50%;
     background-size: cover;
 }
 
-#servicii {
+#energia {
     min-height: 70vh;
     background: linear-gradient( var(--primary), var(--sectionbg) );
 }
 
-#gallery {
+#en_electrica {
     width: 100%;
     min-height: 55vh;
-    background: linear-gradient(#ffffff3a, #ffffff56), url(https://wallpaperaccess.com/full/318166.jpg);
-    background-position: 0% 60%; 
+    background: linear-gradient(#00000053, #00000056), url(https://image.stirileprotv.ro/media/images/800x450/Sep2022/62290382.jpg);
+    background-position: 0% 65%;
     background-size: cover;
 }
 
-#galerie {
-    min-height: 60vh;
+#ener_electrica {
+    min-height: 70vh;
+    background: linear-gradient( var(--primary), var(--sectionbg) );
+}
+
+#en_termica {
+    width: 100%;
+    min-height: 55vh;
+    background: linear-gradient(#ffffff3a, #ffffff56), url(https://blogary.ro/wp-content/uploads/2021/03/cinci-mituri-despre-energia-nucleara.jpg);
+    background-position: 0% 70%; 
+    background-size: cover;
+}
+
+#ener_termica {
+    min-height: 70vh;
     background: linear-gradient( var(--primary), var(--sectionbg) );
 }
 
@@ -392,32 +413,32 @@ main section {
     transition: all 0.3s;
 }
 
-#contact-us {
+#intervius {
     width: 100%;
     min-height: 55vh;
-    background: linear-gradient(#ffffff3a, #ffffff56), url(https://cdn.pixabay.com/photo/2018/12/02/10/07/web-3850917_960_720.jpg);
-    background-position: 0% 50%;
+    background: linear-gradient(#ffffff3a, #ffffff56), url(https://www.einstieg.com/fileadmin/user_upload/ErneuerbareEnergie_1.jpg);
+    background-position: 0% 35%;
     background-size: cover;
 }
 
-#contacte {
+#interviuri {
     min-height: 60vh;
     background: linear-gradient( var(--primary), var(--sectionbg) );
 }
 
 .contact-list {
     line-height: 150%;
-    list-style: radial-gradient( var(--primary), var(--sectionbg) );
+    list-style: radial-gradient( var(--primary), var(--hover) );
     text-align: left;
     margin-left: 50px;
 }
 
-.contact-list2 {
+/* .contact-list2 {
     line-height: 200%;
     list-style: radial-gradient( var(--primary), var(--sectionbg) );
     text-align: left;
     margin-left: 30px;
-}
+} */
 
 .lista h3 {
     font-size: 25px;
@@ -488,7 +509,7 @@ footer {
 }
 
 .logo_footer {
-    height: 80px;
+    height: 70px;
     margin-top: 10px;
 }
 
@@ -569,7 +590,7 @@ footer {
 } */
 
 .active {
-    color: #435d9a !important;
+    color: var(--hover) !important;
     font-size: bold;
     /* color: rgba(9, 22, 145, 0.692) !important; */
 }
