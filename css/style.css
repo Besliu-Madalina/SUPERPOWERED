@@ -166,7 +166,7 @@ main section {
     border: 2px solid var(--secondary);
     padding: 10px;
     border-radius: 5px;
-    background: linear-gradient(var(--primary), #64a94460);
+    background: #64a9444d;
 }
 
 .p-despre p {
@@ -184,6 +184,12 @@ main section {
     margin: 2% 1.15% 0 1.15%;
     width: 450px;
     height: 255px;
+}
+
+.video3 {
+    margin: 2% 19% 0 19%;
+    width: 600px;
+    height: 340px;
 }
 
 /* .i-despre {
